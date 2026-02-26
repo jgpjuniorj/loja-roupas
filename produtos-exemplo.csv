@@ -1,0 +1,5 @@
+Type,Name,Published,Is featured?,Visibility in catalog,Short description,Description,SKU,Regular price,Sale price,Categories,Tags,Images,Stock,Backorders allowed?,Sold individually?
+simple,Camiseta Básica Algodão,1,1,visible,Conforto para o dia a dia,Camiseta 100% algodão,TSHIRT-BASIC-ALG,69.90,,Camisetas|Masculino,,camiseta-basica.jpg,100,no,no
+simple,Calça Jeans Slim,1,0,visible,Jeans confortável e moderno,Calça jeans modelagem slim,JEANS-SLIM-001,179.90,,Calças|Masculino,,calca-jeans.jpg,50,no,no
+simple,Vestido Floral Verão,1,1,visible,Leve e estiloso,Vestido com estampa floral,VESTIDO-FLORAL-VERAO,149.90,,Vestidos|Feminino,,vestido-floral.jpg,40,no,no
+simple,Tênis Casual Branco,1,0,visible,Versátil e confortável,Tênis casual para uso diário,TENIS-CASUAL-BRANCO,199.90,,Calçados,,tenis-branco.jpg,60,no,no
