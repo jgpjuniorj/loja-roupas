@@ -1,24 +1,48 @@
+annotations:
+  fips: "true"
+  images: |
+    - name: apache-exporter
+      version: 1.0.12
+      image: registry-1.docker.io/bitnami/apache-exporter:latest
+    - name: os-shell
+      version: "5"
+      image: registry-1.docker.io/bitnami/os-shell:latest
+    - name: wordpress
+      version: 6.9.1
+      image: registry-1.docker.io/bitnami/wordpress:latest
+  licenses: Apache-2.0
+  tanzuCategory: application
 apiVersion: v2
+appVersion: 6.9.1
+dependencies:
+- condition: memcached.enabled
+  name: memcached
+  repository: oci://registry-1.docker.io/bitnamicharts
+  version: 7.9.11
+- condition: mariadb.enabled
+  name: mariadb
+  repository: oci://registry-1.docker.io/bitnamicharts
+  version: 25.0.1
+- name: common
+  repository: oci://registry-1.docker.io/bitnamicharts
+  tags:
+  - bitnami-common
+  version: 2.36.0
+description: "WordPress is the world's most popular blogging and content management platform. Powerful yet simple, everyone from students to global corporations use it to build beautiful, functional websites."
+home: https://bitnami.com
+icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/wordpress/img/wordpress-stack-220x234.png
+keywords:
+- application
+- blog
+- cms
+- http
+- php
+- web
+- wordpress
+maintainers:
+- name: "Broadcom, Inc. All Rights Reserved."
+  url: https://github.com/bitnami/charts
 name: wordpress
-description: A Helm chart for Kubernetes
-
-# A chart can be either an 'application' or a 'library' chart.
-#
-# Application charts are a collection of templates that can be packaged into versioned archives
-# to be deployed.
-#
-# Library charts provide useful utilities or functions for the chart developer. They're included as
-# a dependency of application charts to inject those utilities and functions into the rendering
-# pipeline. Library charts do not define any templates and therefore cannot be deployed.
-type: application
-
-# This is the chart version. This version number should be incremented each time you make changes
-# to the chart and its templates, including the app version.
-# Versions are expected to follow Semantic Versioning (https://semver.org/)
-version: 0.1.0
-
-# This is the version number of the application being deployed. This version number should be
-# incremented each time you make changes to the application. Versions are not expected to
-# follow Semantic Versioning. They should reflect the version the application is using.
-# It is recommended to use it with quotes.
-appVersion: "1.16.0"
+sources:
+- https://github.com/bitnami/charts/tree/main/bitnami/wordpress
+version: 29.1.2
