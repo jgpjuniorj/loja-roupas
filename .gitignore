@@ -1,0 +1,15 @@
+# Helm
+charts/wordpress/charts/
+charts/wordpress/tmp/
+charts/wordpress/.helmignore
+charts/wordpress/Chart.lock
+
+# Senhas e segredos
+*.bak
+*.sql
+*.env
+secrets.yaml
+
+# VSCode e sistema
+.vscode/
+.DS_Store
